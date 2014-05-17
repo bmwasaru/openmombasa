@@ -1,0 +1,7 @@
+.idea
+*.pyc
+venv
+openmombasa/settings.py
+
+# add to the repository
+!.gitignore

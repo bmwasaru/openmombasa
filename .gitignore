@@ -2,6 +2,8 @@
 *.pyc
 venv
 openmombasa/settings.py
+openmombasa.db
+services/migrations
 
 # add to the repository
 !.gitignore

@@ -4,9 +4,13 @@ from services.models import Service
 
 
 class ServiceSerializer(serializers.Serializer):
-    pk = serializers.Field()  # field is untyped read only
-    name = serializers.CharField(max_length=100)
-    price = serializers.CharField(max_length=100)
+
+    id = serializers.Field()
+    name = serializers.Field()
+    price = serializers.Field()
+
+    class Meta:
+        model = Service
 
     def restore_object(self, attrs, instance=None):
         """
